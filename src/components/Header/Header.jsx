@@ -1,16 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './Header.module.css';
 import menu from '../../menu.png';
 import {connect} from "react-redux";
 import {addTaskAC, updateTaskAC} from "../../Redux/reducer";
-import Form from "../Form/Form";
-import { NavLink } from 'react-router-dom';
 
 
 
 function Header(props) {
-
-        const [hide, isHidden] = useState(false);
 
         let addTitleTask = (e) => {
             let text = e.target.value;
@@ -20,10 +16,7 @@ function Header(props) {
         return <div className={styles.header}>
             <img src={menu} alt='' className={styles.img}/>
             <div>
-                <button className={styles.but} onClick={() => {isHidden(!hide)}}>+ Add To Do</button>
-                {hide?<Form/>: null}
-
-                {/*// <button className={styles.but} onClick={()=>props.addTask()}>+ Add To Do</button>*/}
+                <button className={styles.but} onClick={()=>props.addTask()}>+ Add To Do</button>
                 <input onChange={addTitleTask}
                        className={styles.enter}
                        placeholder='Start writting ToDo... Please!'

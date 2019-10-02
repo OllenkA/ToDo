@@ -7,7 +7,7 @@ const initialState = {
     tasks: [
         {id: 1, title: 'Learn JS', content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
             priority: 'Low', status: 'completed'},
-        {id: 2, title: 'Learn English', content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
+        {id: 2, title: 'Buy cake', content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
             priority: 'High', status: 'assigned'},
         {id: 3, title: 'Learn CSS',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
             priority: 'Middle', status: 'completed'},
@@ -18,7 +18,7 @@ const initialState = {
         {id: 6, title: 'Find lessons to dance',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
             priority: 'High', status: 'assigned'},
         {id: 7, title: 'Learn Redux',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Middle', status: 'assigned'},
+            priority: 'Middle', status: 'completed'},
         {id: 8, title: 'Learn Typescript',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
             priority: 'High', status: 'assigned'},
     ],
