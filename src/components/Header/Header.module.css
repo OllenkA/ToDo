@@ -1,0 +1,25 @@
+.header {
+    grid-area: h;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 0.5fr 11.5fr;
+    grid-template-areas:
+            "x y";
+    align-items: center;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+.but {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.but:active, .but:focus {
+    outline: none;
+}

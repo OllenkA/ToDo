@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route} from 'react-router-dom';
+import Header from "./components/Header/Header";
+import NavMenu from "./components/Navmenu/NavMenu";
+import Home from "./components/Home/Home";
+import Settings from "./components/Settings/Settings";
+import Form from "./components/Form/Form";
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return <div className='App'>
+        <Header/>
+        <NavMenu/>
+        <Route path='/home' render={ () => <Home />} />
+        <Route path='/settings' render={ () => <Settings />} />
+        <Route path='/form' render={ () => <Form />} />
+
+
+
     </div>
-  );
 }
 
 export default App;
