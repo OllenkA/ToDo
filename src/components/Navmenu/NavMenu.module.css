@@ -1,11 +1,9 @@
 .nav {
     grid-area: n;
+    min-height: 745px;
     background-color: blanchedalmond;
-    /*margin-top: 10px;*/
     border-radius: 10px;
-    /*padding: 20px;*/
     line-height: 1.5;
-    /*height: 700px;*/
 }
 .circles {
     height: 60px;
@@ -24,8 +22,8 @@
 }
 
 .wrap {
-    padding-left: 0px;
-    margin-left: 0px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .mainImg {

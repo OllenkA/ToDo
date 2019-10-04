@@ -3,7 +3,7 @@ import styles from'./NavMenu.module.css';
 import { NavLink } from 'react-router-dom';
 import home from '../../home.png';
 import settings from '../../settings.png'
-import circle from '../../circle.png'
+
 
 
 function NavMenu() {

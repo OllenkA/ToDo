@@ -1,12 +1,16 @@
 .home {
     grid-area: c;
     background-color: aquamarine;
-    height: 100%;
     margin-top: 5px;
+    min-height: 675px;
 }
 
 .note {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.warn {
+    color: red;
 }

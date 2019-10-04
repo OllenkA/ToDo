@@ -1,26 +1,31 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './Home.module.css';
 import { connect } from 'react-redux';
-import {addTaskAC, deleteTaskAC, setTasksAC, updateTaskAC} from "../../Redux/reducer";
+import {addTaskAC, deleteTaskAC, updateTaskAC} from "../../Redux/reducer";
 import Tasks from "../Tasks/Tasks";
 
 function Home(props) {
 
     let tasksAssigned = props.tasks.filter(t => t.status === 'assigned').map(task => {
-        return <Tasks key={task.id} id={task.id} title={task.title} content={task.content}
-                              priority={task.priority} status={task.status}/>
+        return <Tasks key={task.id}
+                      id={task.id} title={task.title} content={task.content}
+                      priority={task.priority} status={task.status}
+        />
     });
 
     let tasksCompleted = props.tasks.filter(t => t.status !== 'assigned').map(task => {
         return <Tasks key={task.id} id={task.id} title={task.title} content={task.content}
-                              priority={task.priority} status={task.status}/>
+                              priority={task.priority} status={task.status}
+        />
     });
 
     return (
         <div className={styles.home}>
-            <h1>To Do {`(${tasksAssigned.length})`}</h1>
+            <h1>To Do {tasksAssigned.length !== 0?`(${tasksAssigned.length})`:
+                <h3 className={styles.warn}>(Ooops...No tasks in progress)</h3>}</h1>
             {tasksAssigned}
-            <h1>Completed {`(${tasksCompleted.length})`}</h1>
+            <h1>Completed {tasksCompleted.length !== 0?`(${tasksCompleted.length})`:
+        <h3 className={styles.warn}>(You have no completed tasks yet! We can add ToDo!)</h3>}</h1>
             {tasksCompleted}
         </div>
     );
@@ -29,15 +34,11 @@ function Home(props) {
 const mapStateToProps = (state) => {
     return {
         tasks: state.tasks,
-        editMode: state.editMode,
     }
 
-}
+};
 const mapDispatchToProps = (dispatch) => {
     return {
-        // setTasks: (tasks) => {
-        //     dispatch(setTasksAC(tasks));
-        // },
         addTask: (taskId, newText) => {
             dispatch(addTaskAC(taskId, newText));
         },
@@ -49,6 +50,6 @@ const mapDispatchToProps = (dispatch) => {
         }
 
     }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

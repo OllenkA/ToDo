@@ -1,16 +1,38 @@
 .header {
     grid-area: h;
     background-color: aquamarine;
-    display: grid;
-    grid-template-columns: 0.5fr 11.5fr;
-    grid-template-areas:
-            "x y";
-    align-items: center;
+    /*display: grid;*/
+    /*grid-template-columns: 0.5fr 11.5fr;*/
+    /*grid-template-areas:*/
+            /*"x y";*/
+    /*align-items: center;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navk {
+    grid-area: h;
+    background-color: aquamarine;
+    /*display: grid;*/
+    /*grid-template-columns: 0.5fr 11.5fr;*/
+    /*grid-template-areas:*/
+            /*"x y";*/
+    /*align-items: center;*/
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img {
-    height: 50px;
-    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
 }
 
 .but {
