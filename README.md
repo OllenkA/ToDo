@@ -1,1 +1,1 @@
-https://ollenka.github.io/ToDo/home - link on my toDo
+https://ollenka.github.io/ToDo/ - link on my toDo
