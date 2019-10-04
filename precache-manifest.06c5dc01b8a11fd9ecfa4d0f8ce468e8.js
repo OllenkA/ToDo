@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6974f89822ad6aca15e57f92e95f8655",
+    "revision": "add167fcc72f738e57184411653a2ccc",
     "url": "/ToDo/index.html"
   },
   {
-    "revision": "ed558143836aa83fb78a",
+    "revision": "762d92487c17b1af2c72",
     "url": "/ToDo/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "d7943acb08b5bf9bafbf",
-    "url": "/ToDo/static/css/main.b61e47cc.chunk.css"
+    "revision": "25df8e47f14addead23f",
+    "url": "/ToDo/static/css/main.7279bebb.chunk.css"
   },
   {
-    "revision": "ed558143836aa83fb78a",
-    "url": "/ToDo/static/js/2.7ff64513.chunk.js"
+    "revision": "762d92487c17b1af2c72",
+    "url": "/ToDo/static/js/2.bf14283b.chunk.js"
   },
   {
-    "revision": "d7943acb08b5bf9bafbf",
-    "url": "/ToDo/static/js/main.91eacc5f.chunk.js"
+    "revision": "25df8e47f14addead23f",
+    "url": "/ToDo/static/js/main.ce3999e8.chunk.js"
   },
   {
     "revision": "7f749822025ce21de9fd",
     "url": "/ToDo/static/js/runtime-main.6abe815d.js"
-  },
-  {
-    "revision": "0994325dd5131eaca671e6a7426ac87f",
-    "url": "/ToDo/static/media/circle.0994325d.png"
   },
   {
     "revision": "85e24632ff1665bf41fa8d052bb92fc6",
