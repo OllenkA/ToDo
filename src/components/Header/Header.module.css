@@ -1,6 +1,7 @@
 .header {
     grid-area: h;
     background-color: aquamarine;
+    border-radius: 10px;
     /*display: grid;*/
     /*grid-template-columns: 0.5fr 11.5fr;*/
     /*grid-template-areas:*/

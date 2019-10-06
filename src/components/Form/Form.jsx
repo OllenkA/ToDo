@@ -10,6 +10,8 @@ function Form(props) {
 
     const [title, createTitle] = useState('');
     const [content, createContent] = useState('');
+    const [priority, createPriority] = useState('');
+    const [status, createStatus] = useState('');
 
     const addTitle = (e) => {
         createTitle(e.target.value);
@@ -19,37 +21,56 @@ function Form(props) {
         createContent(e.target.value);
     };
 
-    const addTodoList = (title, content) => {
-        props.addTodo(title, content);
+    const addTodoList = () => {
+        props.addTodo(title, content, priority, status, new Date().toLocaleDateString());
         return <Home/>
     };
 
     const displayWarning = () => {
-        debugger;
         return alert('Enter Title, please!')
     };
 
+    const sendPriority = (e) => {
+        createPriority(e.target.value);
+    };
+
+    const sendStatus = (e) => {
+        createStatus(e.target.value);
+    };
 
     return <div className={styles.container}>
         <h2>MY NEW TODO</h2>
             <fieldset>
                 <legend>TITLE:</legend>
-                <input onChange={addTitle}/>
+                <input className={styles.textContent} onChange={addTitle} placeholder={'Please, enter title task...'}/>
             </fieldset>
             <fieldset>
                 <legend>CONTENT:</legend>
-                <textarea onChange={addContent}/>
+                <textarea className={styles.textContent} onChange={addContent} placeholder={'Please, enter description your task...'}/>
             </fieldset>
             <fieldset>
                 <legend>PRIORITY:</legend>
-                <label>Low: <input type='radio' name='priority' value='Low'/></label>
-                <label>Middle: <input type='radio' name='priority' value='Middle'/></label>
-                <label>High: <input type='radio' name='priority' value='High'/></label>
+                <label>Low: <input type='radio'
+                                   onChange={sendPriority}
+                                   name='priority'
+                                   value='Low'/>
+                </label>
+                <label>Middle: <input type='radio'
+                                      onChange={sendPriority}
+                                      name='priority' value='Middle'/>
+                </label>
+                <label>High: <input type='radio'
+                                    onChange={sendPriority}
+                                    name='priority' value='High'/></label>
             </fieldset>
             <fieldset>
                 <legend>STATUS:</legend>
-                <label>To Do: <input type='radio' name='status' value='assigned'/></label>
-                <label>Completed: <input type='radio' name='status' value='completed'/></label>
+                <label>To Do: <input type='radio'
+                                     onChange={sendStatus}
+                                     name='status' value='assigned'/></label>
+                <label>Completed: <input type='radio'
+                                         onChange={sendStatus}
+                                         name='status' value='completed'/></label>
             </fieldset>
             <fieldset>
                 <NavLink to='/home'>
@@ -71,8 +92,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addTodo: (title, content) => {
-            dispatch(addTodoAC(title, content));
+        addTodo: (title, content, priority, status, date) => {
+            dispatch(addTodoAC(title, content, priority, status, date));
         },
     }
 };

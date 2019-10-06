@@ -6,8 +6,8 @@ import Title from "../Title/Title";
 function Tasks(props) {
 
     return <div className={styles.container}>
-        <Priority id={props.id} priority={props.priority} status={props.status}/>
-        <Title id={props.id} title={props.title} content={props.content} status={props.status}/>
+        <Priority id={props.id} priority={props.priority} status={props.status} date={props.date}/>
+        <Title id={props.id} title={props.title} content={props.content} status={props.status} date={props.date}/>
     </div>;
 }
 

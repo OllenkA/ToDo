@@ -9,23 +9,23 @@ function Home(props) {
     let tasksAssigned = props.tasks.filter(t => t.status === 'assigned').map(task => {
         return <Tasks key={task.id}
                       id={task.id} title={task.title} content={task.content}
-                      priority={task.priority} status={task.status}
+                      priority={task.priority} status={task.status} date={task.date}
         />
     });
 
     let tasksCompleted = props.tasks.filter(t => t.status !== 'assigned').map(task => {
         return <Tasks key={task.id} id={task.id} title={task.title} content={task.content}
-                              priority={task.priority} status={task.status}
+                              priority={task.priority} status={task.status} date={task.date}
         />
     });
 
     return (
         <div className={styles.home}>
             <h1>To Do {tasksAssigned.length !== 0?`(${tasksAssigned.length})`:
-                <h3 className={styles.warn}>(Ooops...No tasks in progress)</h3>}</h1>
+                <span className={styles.warn}>(Ooops...No tasks in progress)</span>}</h1>
             {tasksAssigned}
             <h1>Completed {tasksCompleted.length !== 0?`(${tasksCompleted.length})`:
-        <h3 className={styles.warn}>(You have no completed tasks yet! We can add ToDo!)</h3>}</h1>
+        <span className={styles.warn}>(You have no completed tasks yet! We can add ToDo!)</span>}</h1>
             {tasksCompleted}
         </div>
     );
