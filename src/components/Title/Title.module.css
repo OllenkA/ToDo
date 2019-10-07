@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*flex-grow: 1;*/
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: aquamarine;
+    color: blanchedalmond;
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 10px;
+}

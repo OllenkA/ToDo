@@ -1,0 +1,9 @@
+.container {
+    background-color: aquamarine;
+    min-height: 675px;
+    margin-top: 5px;
+}
+
+.textContent {
+    width: 80%;
+}
