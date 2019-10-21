@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ToDo/static/css/main.679c05f6.chunk.css",
-    "main.js": "/ToDo/static/js/main.0e92a35e.chunk.js",
-    "main.js.map": "/ToDo/static/js/main.0e92a35e.chunk.js.map",
+    "main.css": "/ToDo/static/css/main.5db5cfc6.chunk.css",
+    "main.js": "/ToDo/static/js/main.747754e6.chunk.js",
+    "main.js.map": "/ToDo/static/js/main.747754e6.chunk.js.map",
     "runtime-main.js": "/ToDo/static/js/runtime-main.6abe815d.js",
     "runtime-main.js.map": "/ToDo/static/js/runtime-main.6abe815d.js.map",
     "static/css/2.0624914a.chunk.css": "/ToDo/static/css/2.0624914a.chunk.css",
-    "static/js/2.cd5e4f4a.chunk.js": "/ToDo/static/js/2.cd5e4f4a.chunk.js",
-    "static/js/2.cd5e4f4a.chunk.js.map": "/ToDo/static/js/2.cd5e4f4a.chunk.js.map",
+    "static/js/2.d27e1190.chunk.js": "/ToDo/static/js/2.d27e1190.chunk.js",
+    "static/js/2.d27e1190.chunk.js.map": "/ToDo/static/js/2.d27e1190.chunk.js.map",
     "index.html": "/ToDo/index.html",
-    "precache-manifest.049b0d669d4c42b5dbf0f778b559431b.js": "/ToDo/precache-manifest.049b0d669d4c42b5dbf0f778b559431b.js",
+    "precache-manifest.70e246de4026a686d28ecd62ade1acd9.js": "/ToDo/precache-manifest.70e246de4026a686d28ecd62ade1acd9.js",
     "service-worker.js": "/ToDo/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/ToDo/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.679c05f6.chunk.css.map": "/ToDo/static/css/main.679c05f6.chunk.css.map",
+    "static/css/main.5db5cfc6.chunk.css.map": "/ToDo/static/css/main.5db5cfc6.chunk.css.map",
     "static/media/home.png": "/ToDo/static/media/home.85e24632.png",
     "static/media/settings.png": "/ToDo/static/media/settings.79f99d7b.png"
   }
