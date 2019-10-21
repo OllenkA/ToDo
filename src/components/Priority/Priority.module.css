@@ -1,4 +1,4 @@
-.priority {
+.priorityAndStatus {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -11,4 +11,13 @@
     justify-content: flex-end;
     margin-bottom: 10px;
     color: red;
+}
+
+.priority, .time {
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.priority {
+    font-style: italic;
 }

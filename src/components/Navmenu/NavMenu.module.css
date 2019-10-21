@@ -1,68 +1,13 @@
 .nav {
     grid-area: n;
-    min-height: 745px;
+    min-height: 100vh;
     background-color: blanchedalmond;
     border-radius: 10px;
     line-height: 1.5;
-}
-.circles {
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    background-color: aqua;
-    margin: 0;
-}
-
-.circle {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    background-color: blanchedalmond;
-    margin: 5px;
-}
-
-.wrap {
-    padding-left: 0;
-    margin-left: 0;
 }
 
 .mainImg {
     height: 40px;
     width: 40px;
     margin-right: 10px;
-}
-
-.todo {
-    margin-bottom: 20px;
-}
-
-.navlink {
-    color: aqua;
-    font-weight: 700;
-}
-
-.navlink:hover {
-    transition: 1s;
-    color: aqua;
-    font-style: italic;
-    font-size: 30px;
-    text-shadow: 5px -1px 5px black;
-    text-decoration: none;
-}
-
-.navlink.active {
-    transition: 1s;
-    font-size: 35px;
-    color: aqua;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 5px -2px 5px black;
-    text-decoration: none;
-}
-
-.img {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-
 }

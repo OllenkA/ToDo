@@ -22,12 +22,12 @@ function Title(props) {
         props.updateContent(props.id, text);
     };
 
-    return <div className={styles.container}>
-        <div>
-            <div className={styles.circle}>{props.title === '' ? '' : props.title[0].toUpperCase()}</div>
-        </div>
-        <div className={styles.task}>
-            <div className={styles.title}>
+    return <article className={styles.container}>
+        <section>
+            <aside className={styles.circle}>{props.title === '' ? '' : props.title[0].toUpperCase()}</aside>
+        </section>
+        <section className={styles.task}>
+            <header className={styles.title}>
                 {edit ?
                     <input onBlur={() => {
                         editMode(!edit)
@@ -45,14 +45,14 @@ function Title(props) {
                         onClick={() => props.deleteTask(props.id)}>
                     &times;
                 </button>
-            </div>
+            </header>
             <Content id={props.id} content={props.content} status={props.status}
                      changeStatus={changeStatus} onContentChange={onContentChange}/>
-        </div>
-    </div>
+        </section>
+    </article>
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = () => {
     return {
 
     }

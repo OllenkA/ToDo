@@ -1,0 +1,14 @@
+.todo {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.todo h1{
+    font-weight: 700;
+}
+
+.todo:hover, .todo:active{
+    text-decoration: none;
+    color: black;
+}

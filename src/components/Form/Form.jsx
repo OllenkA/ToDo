@@ -38,7 +38,7 @@ function Form(props) {
         createStatus(e.target.value);
     };
 
-    return <div className={styles.container}>
+    return <main className={styles.container}>
         <h2>MY NEW TODO</h2>
             <fieldset>
                 <legend>TITLE:</legend>
@@ -81,7 +81,7 @@ function Form(props) {
                 </NavLink>
             </fieldset>
 
-    </div>
+    </main>
 }
 
 const mapStateToProps = (state) => {

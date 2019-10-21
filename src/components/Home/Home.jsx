@@ -20,14 +20,14 @@ function Home(props) {
     });
 
     return (
-        <div className={styles.home}>
+        <article className={styles.home}>
             <h1>To Do {tasksAssigned.length !== 0?`(${tasksAssigned.length})`:
                 <span className={styles.warn}>(Ooops...No tasks in progress)</span>}</h1>
             {tasksAssigned}
             <h1>Completed {tasksCompleted.length !== 0?`(${tasksCompleted.length})`:
         <span className={styles.warn}>(You have no completed tasks yet! We can add ToDo!)</span>}</h1>
             {tasksCompleted}
-        </div>
+        </article>
     );
 }
 

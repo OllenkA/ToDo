@@ -1,31 +1,19 @@
 import React from 'react';
-import styles from'./NavMenu.module.css';
-import { NavLink } from 'react-router-dom';
+import styles from './NavMenu.module.css';
 import home from '../../home.png';
 import settings from '../../settings.png'
-
+import Logo from "./Logo/Logo";
+import Links from "./Links/Links";
+import ToDo from "./ToDo/ToDo";
 
 
 function NavMenu() {
-    return (
-        <div className={styles.nav}>
-            <h1 className={styles.todo}>
-                <div className={styles.circles}>
-                    <div className={styles.circle}> </div>
-                </div>
-                {/*<img src={circle} alt='' className={styles.mainImg}/>*/}
-                ToDo
-            </h1>
-            <h2 className={styles.wrap}>
-                <img src={ home }  alt='' className={styles.img}/>
-                <NavLink className={styles.navlink} to='/home' activeClassName={styles.active}>Home</NavLink>
-            </h2>
-            <h2 className={styles.wrap}>
-                <img src={ settings }  alt='' className={styles.img}/>
-                <NavLink className={styles.navlink} to='/settings' activeClassName={styles.active}>Settings</NavLink>
-            </h2>
-        </div>
-    );
+    return <nav className={styles.nav}>
+        <Logo/>
+        <ToDo/>
+        <Links logo={home} way={'home'}/>
+        <Links logo={settings} way={'settings'}/>
+    </nav>
 }
 
 export default NavMenu;

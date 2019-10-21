@@ -5,7 +5,7 @@ function Content (props) {
 
     const [editContent, editModeContent] = useState(true);
 
-    return <div className={styles.container}>
+    return <article className={styles.container}>
         {editContent ? <p onClick={() => {
                 editModeContent(!editContent)
             }} className={styles.content}>
@@ -18,11 +18,11 @@ function Content (props) {
                       onChange={props.onContentChange}/>}
         <button className={styles.changeStatus} type='button'
                 onClick={() => props.changeStatus(props.id, props.status)}>
-            <small>
+            <section>
                 {props.status === 'assigned' ? 'Mark as completed' : 'Mark as not completed'}
-            </small>
+            </section>
         </button>
-    </div>
+    </article>
 }
 
 export default Content;

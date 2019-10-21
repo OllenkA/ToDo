@@ -3,21 +3,19 @@ import styles from './Priority.module.css';
 
 function Priority(props) {
 
-    return <div>
+    return <aside>
         {props.status === 'assigned' ?
-            <div className={styles.priority}>
-                <small>
-                    <b>
+            <article className={styles.priorityAndStatus}>
+                    <section className={styles.priority}>
                         {props.priority === 'Middle' ? '' :
                             props.priority === 'High' ?
                                 `↑ ${props.priority} Priority` :
                                 `↓ ${props.priority} Priority`}
-                    </b>
-                </small>
+                    </section>
                 &nbsp;
-                <small>{props.date}</small>
-            </div> : <span className={styles.statusCompleted}>&#10004; Completed</span>}
-    </div>;
+                <time className={styles.time}>{props.date}</time>
+            </article> : <span className={styles.statusCompleted}>&#10004; Completed</span>}
+    </aside>;
 }
 
 export default Priority;
