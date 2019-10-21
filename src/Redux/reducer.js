@@ -34,11 +34,11 @@ const reducer = (state = initialState, action) => {
 
     switch (action.type) {
 
-        case SET_TASKS:
-            return {
-                ...state,
-                tasks: [...action.tasks, ...state.tasks]
-            };
+        // case SET_TASKS:
+        //     return {
+        //         ...state,
+        //         tasks: [...action.tasks, ...state.tasks]
+        //     };
 
         case UPDATE_TASK:
             let newTasks = state.tasks.map(el => {
@@ -68,8 +68,6 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 tasks:  newContent,
             };
-
-        // m,
 
         case ADD_TODO:
             let maxId = state.tasks.reduce((acc, task) => {

@@ -6,9 +6,6 @@ import {NavLink} from "react-router-dom";
 import {changeHiddenNavMenuAC} from "../../Redux/reducer";
 import {connect} from 'react-redux';
 
-
-
-
 function Header(props) {
 
         let addTodo = () => {
