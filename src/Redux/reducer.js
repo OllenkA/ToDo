@@ -10,22 +10,21 @@ export const HIDDEN_NAV_MENU = 'HIDDEN_NAV_MENU';
 
 const initialState = {
     tasks: [
-        {id: 1, title: 'Learn JS', content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Low', status: 'assigned', date: '10.09.2019'},
-        {id: 2, title: 'Buy cake', content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Low', status: 'assigned', date: '12.09.2019'},
-        {id: 3, title: 'Learn CSS',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Middle', status: 'completed', date: '15.09.2019'},
-        {id: 4, title: 'Learn React',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Low', status: 'assigned', date: '19.09.2019'},
-        {id: 5, title: 'Learn HTML',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Low', status: 'completed', date: '19.09.2019'},
-        {id: 6, title: 'Find lessons to dance',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'High', status: 'assigned', date: '20.09.2019'},
-        {id: 7, title: 'Learn Redux',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Middle', status: 'completed', date: '29.09.2019'},
-        {id: 8, title: 'Learn Typescript',content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
-            priority: 'Low', status: 'assigned', date: '01.10.2019'},
+        {id: 1, title: 'Buy cake', priority: 'Middle', status: 'completed',
+            content: 'I need buy cake with strawberry for my mother 14.10.2019.',
+            date: '12.09.2019'},
+        {id: 2, title: 'Learn React', priority: 'High', status: 'assigned',
+            content: 'I must look one video every day.',
+            date: '19.09.2019'},
+        {id: 3, title: 'Find lessons to dance', priority: 'Middle', status: 'completed',
+            content: 'I want to find school dance nearly my home and with good teachers.',
+            date: '20.09.2019'},
+        {id: 4, title: 'Choose the dress on New Year party', priority: 'Low', status: 'assigned',
+            content: 'I must find a good dress on New Year party before 15.12.2019',
+            date: '29.09.2019'},
+        // {id: 5, title: 'Learn Typescript', priority: 'Low', status: 'assigned',
+        //     content: 'ciuabdcjbasboabdxoawnkdnaodnksnlcnasknhdsadhnashdnakjshdjsa',
+        //     date: '01.10.2019'},
     ],
     isHiddenNavMenu: false,
 };
@@ -33,12 +32,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {
-
-        // case SET_TASKS:
-        //     return {
-        //         ...state,
-        //         tasks: [...action.tasks, ...state.tasks]
-        //     };
 
         case UPDATE_TASK:
             let newTasks = state.tasks.map(el => {
@@ -128,8 +121,6 @@ export const addTaskAC = (title) => ({ type: ADD_TASK, title});
 export const changeHiddenNavMenuAC = () => ({ type: HIDDEN_NAV_MENU});
 
 export const deleteTaskAC = (taskId) => ({ type: DELETE_TASK, taskId});
-
-// export const setTasksAC = (tasks) => ({type: SET_TASKS, tasks: tasks});
 
 export const updateTaskAC = (id, title) => ({type: UPDATE_TASK, id, title});
 
